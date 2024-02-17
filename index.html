@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+
+  <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+  <div class="game-container">
+
+    <div class="logo-scoreboard">
+
+      <div class="logo">
+        <img src="./images/logo-bonus.svg" alt="" srcset="">
+      </div>
+
+      <div class="scoreboard">
+        <div class="scoreboard-title">Score</div>
+        <div class="scoreboard-number">0</div>
+      </div>
+    </div>
+
+    <div class="choice-buttons">
+
+      <div class="choice-button-bg">
+        <img src="./images/bg-pentagon.svg" alt="" srcset="">
+      </div>
+
+      <button class="choice-button scissors-choice">
+        <img src="./images/icon-scissors.svg" onclick="setPlayerChoice('scissors')" alt="" srcset="">
+      </button>
+
+      <button class="choice-button spock-choice">
+        <img src="./images/icon-spock.svg" onclick="setPlayerChoice('spock')" alt="" srcset="">
+      </button>
+
+      <button class="choice-button paper-choice">
+        <img src="./images/icon-paper.svg" onclick="setPlayerChoice('paper')" alt="" srcset="">
+      </button>
+
+      <button class="choice-button lizard-choice">
+        <img src="./images/icon-lizard.svg" onclick="setPlayerChoice('lizard')" alt="" srcset="">
+      </button>
+
+      <button class="choice-button rock-choice">
+        <img src="./images/icon-rock.svg" onclick="setPlayerChoice('rock')" alt="" srcset="">
+      </button>
+
+    </div>
+
+    <div class="chosen-hands">
+
+      <div class="player-hand">
+        <button class="player-hand-button">
+          <img src="./images/icon-paper.svg" id="player-picked-hand" alt="" srcset="">
+        </button>
+        <h1>You Picked</h1>
+      </div>
+
+      <div class="computer-hand">
+        <button class="computer-hand-button">
+          <img src="" id="computer-picked-hand" alt="" srcset="">
+        </button>
+        <h1>The House Picked</h1>
+      </div>
+
+    </div>
+
+    <div class="game-results-mobile">
+      <h1></h1>
+      <button onclick="playAgain('')" >Play Again</button>
+    </div>
+
+    <div class="chosen-hands-desktop">
+
+      <div class="player-hand-desktop">
+        <h1>You Picked</h1>
+        <button class="player-hand-button-desktop">
+          <img src="./images/icon-paper.svg" id="player-picked-hand-desktop" alt="" srcset="">
+        </button>
+      </div>
+
+      <div class="game-results-desktop">
+        <h1></h1>
+        <button onclick="playAgain('')">Play Again</button>
+      </div>
+
+      <div class="computer-hand-desktop">
+        <h1>The House Picked</h1>
+        <button class="computer-hand-button-desktop">
+          <img src="" id="computer-picked-hand-desktop" alt="" srcset="">
+        </button>
+      </div>
+    </div>
+
+    <button class="rules-button">RULES</button>
+
+    <div class="rules-popup">
+      <img src="./images/image-rules-bonus.svg" alt="" srcset="">
+    </div>
+
+    <div id="overlay"></div>
+    
+
+  </div>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
